@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>My Portfolio!</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    *{
+  margin: 0px;
+  padding: 0px;
+}
+body{
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0px;
+}
+.border:hover{
+  border:2px solid white;
+}
+.navbar{
+  
+  justify-content: center;
+  display: flex;
+  gap: px;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  width:100vw;
+ background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+ border-bottom:2px solid red;
+}
+
+.logo{
+  background-image: url("logo.png");
+  height:80px;
+  width:120px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+main{
+  flex:1;
+
+
+}
+
+.options a{
+  text-decoration: none;
+  color:white;
+  margin: 40px;
+  font-size: 27px;
+}
+
+.section1{
+  height: 700px;
+  width:100%;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  
+  
+  
+}
+
+
+.herotext{
+  font-weight: 700;
+  font-size: 35px;
+  color:white;
+  margin-left: 20px;
+  font-weight: 900;
+  position: relative;
+  top:30px;
+  text-decoration: underline #0a80cf;
+}
+.herotext1{
+  font-weight: 700;
+  font-size: 35px;
+  color:#0a80cf;
+  margin-left: 5px;
+  position: relative;
+  font-weight: 900;
+  top:30px;
+  text-decoration: underline #0a80cf;
+}
+
+.hero-image{
+  background-image: url("hero.png");
+  height: 500px;
+  width:290px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position:absolute;
+  right:10px;
+  top:147px;
+  
+  
+}
+
+
+
+.dev{
+  color:#0a80cf;
+  font-weight: 700;
+  font-size: 37px;
+  margin-top:50px;
+  margin-left: 20px;
+  
+}
+
+p{
+  margin: 5px;
+}
+
+.education{
+  color:white;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top:23px;
+  margin-left:20px;
+}
+
+.about{
+  color:#0a80cf;
+  font-size: 35px;
+  font-weight: 800;
+  margin-top: 20px;
+  margin-left: 10px;
+}
+
+.description{
+  color:white;
+  margin-top: 30px;
+  font-weight:normal;
+  font-size: 27.5px;
+}
+.myskill{
+  color:#0a80cf;
+  font-size: 30px;
+  font-weight: 700;
+  margin-top:23px;
+  margin-left:20px;
+}
+
+.skills{
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  width:450px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+
+  
+
+
+.skillh{
+  color:white;
+  font-size: 30px;
+  width:75px;
+  background:rgb(250,10,10) ;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.skillc{
+  color:white;
+  width:70px;
+  font-size: 30px;
+  background:#1565ab ;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.skillj{
+  color:white;
+  width:150px;
+  font-size: 30px;
+  background:#c4b618 ;
+  text-align: center;
+  border-radius: 7px;
+}
+
+.skillr{
+  font-size: 30px;
+  color:white;
+  width:77px;
+  background:#28d1b8 ;
+  text-align: center;
+  border-radius: 7px;
+}
+
+
+.project{
+  border-top:2px solid red;
+  height: 900px;
+  width:100%;
+  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
+  
+}
+
+.myproject-title{
+  font-size: 35px;
+  color:#0a8acf;
+  font-weight: 900;
+  margin-top: 30px;
+  margin-left: 50px;
+}
+
+.myprojects{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-top: 30px;
+  gap:5px;
+  
+  
+  
+}
+
+
+.box1{
+  height: 300px;
+  width:290px;
+  background: white;
+  padding: 10px;
+  border-radius:10px;
+  text-align: center;
+}
+
+.image1{
+  height: 250px;
+  width:250px;
+  margin-left:25px ;
+  border: 1px solid black;
+  border-radius:5px;
+  background: url("amazon.png.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.button{
+  color:white;
+  font-size: 25px;
+  border:1px solid yellow;
+  background: black;
+  border-radius: 5px;
+  text-align: center;
+  margin:10px;
+}
+
+.bottom{
+  font-size: 25px;
+  text-align: center;
+  margin: 2px;
+}
+
+.image2{
+  background-image:url("IMG_20260218_162602.jpg");
+}
+
+.image3{
+  background: url("myportfolio.png.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+footer{
+  text-align: center;
+  height: 200px;
+  width:100%;
+  background:#0f0f0f;
+  color:white;
+}
+.footer-content h2{
+  font-size: 40px;
+  margin-bottom: 10px;
+  
+}
+
+.footer-content .para{
+  margin:5px 0px;
+  font-size: 25px;
+  
+}
+.social{
+  margin: 15px 0;
+}
+.social a{
+  text-decoration: none;
+  margin: 0px 20px;
+  font-size: 25px;
+  font-weight: 700;
+  color:white;
+}
+
+.copy{
+  margin-top: 10px;
+  color:grey;
+  font-size:25px;
+}
+    
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo border">
+   
+      </div>
+      <div class="options">
+        <ul>
+          <a href="#" class="border"> Home</a>
+          <a href="#" class="border">Gallery </a>
+          <a href="#" class="border"> Achievmemts</a>
+          <a href="#" class="border">About</a>
+          <a href="#" class="border">Contact Us</a>
+          
+        </ul>
+      </div>
+      
+    </nav>
+    
+    
+    
+    
+    
+  </header>
+  
+  <main class="section1">
+    <div>
+      <span class="herotext">Sandeep</span>
+      <span class="herotext1">Yadav</span><br>
+      <div class="dev">  <p >I am a </p>
+      <p >Web Developer</p>
+        <hr style="width:200px; color:red;">
+      
+  
+    </div>
+      <div class="hero-image">
+    </div>
+    <div >
+      <div class="education">10th & 12th Pass ┃ Diploma In CSE</div>
+      <div class="about">About Me</div>
+      <hr style="width:200px;">
+      <div class="description"><p>Hello! I am from Achhar Gulariya Mau.</p>
+        <p>Currently pursuing a Diploma in Computer Science and Engineering.</p>
+          <p>Passionate about Web Development and Coding.</p>
+        
+      </div>
+      <br>
+      <div >
+        <h3 class="myskill">My Skill</h3>
+        <hr style="width:130px;">
+        <div class="skills">
+        <div class="skillh">Html </div>
+        <div class="skillc">Css </div>
+        <div class="skillj">Java Script </div>
+        <div class="skillr"> React</div>
+         
+        </div>
+      </div>
+    </div>
+    
+      <div class="project">
+        <div>
+          <h2 class="myproject-title"> My Porjects</h2>
+          <hr style="width:300px;">
+        </div>
+        <div class="myprojects" >
+          <div class="box1">
+            <div class="image1" >   </div>
+            <h3 class="bottom">Amazon Clone</h3>
+            <span class="button">View Live</span> 
+            <span class="button"> Github</span>
+            
+            
+          </div>
+          
+          
+          <div class="box1">
+            <div class="image2 image1">   </div>
+            <h3 class="bottom">Calculator Clone</h3>
+            <span class="button">View Live</span> 
+            <span class="button"> Github</span>
+            
+            
+          </div>
+            
+            
+         
+          <div class="box1">
+            <div class="image3 image1">   </div>
+            <h3 class="bottom">My Portfolio</h3>
+            <span class="button">View Live</span> 
+            <span class="button"> Github</span>
+            
+          </div>
+        
+          <div class="box1">
+            <div class="image1">   </div>
+            <h3 class="bottom">Amazon Clone</h3>
+            <span class="button">View Live</span> 
+            <span class="button"> Github</span>
+            
+            
+          </div>
+          
+            <div class="box1">
+            <div class="image2 image1">   </div>
+            <h3 class="bottom">Amazon Clone</h3>
+            <span class="button">View Live</span> 
+            <span class="button"> Github</span>
+            
+            
+          </div>
+          
+            <div class="box1">
+            <div class="image3 image1">   </div>
+            <h3 class="bottom">Amazon Clone</h3>
+            <span class="button">View Live</span> 
+            <span class="button"> Github</span>
+            
+            
+          </div>
+          
+        
+        
+        
+        
+      </div>
+    
+    
+    
+    
+  </main>
+
+      
+      <footer>
+        <div class="footer-content">
+          <h2>Sandeep Yadav</h2>
+          <p class="para">Web Developer | Diploma in CSE</p>
+          
+        </div>
+        <div class="social">
+          <a href="#" class="border">Instagram</a>
+            <a href="#" class="border">Linkedin</a>
+            <a href="#" class="border">Github</a>
+        </div>
+        <div>
+                         <p class="copy">
+            © 2026 Sandeep Yadav | All Rights Reserved
+        
+</p>
+        </div>
+
+        
+        
+      </footer>
+      
+ 
+    
+ 
+  
+  
+</body>
+      </html>
+        
