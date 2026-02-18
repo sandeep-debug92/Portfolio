@@ -5,6 +5,7 @@
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>My Portfolio!</title>
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     *{
   margin: 0px;
@@ -27,7 +28,7 @@ body{
   align-items: center;
   justify-content: space-between;
   height: 100px;
-  width:100vw;
+  width:100%;
  background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
  border-bottom:2px solid red;
 }
@@ -55,7 +56,7 @@ main{
 }
 
 .section1{
-  height: 700px;
+  min-height: 700px;
   width:100%;
   background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
   
@@ -195,7 +196,7 @@ p{
 
 .project{
   border-top:2px solid red;
-  height: 900px;
+  min-height: 900px;
   width:100%;
   background: linear-gradient(135deg, #0f0f0f, #1a1a2e);
   
@@ -374,8 +375,8 @@ footer{
           <div class="box1">
             <div class="image1" >   </div>
             <h3 class="bottom">Amazon Clone</h3>
-            <span class="button">View Live</span> 
-            <span class="button"> Github</span>
+            <a href="#" class="button">View Live</a> 
+            <a href="#" class="button"> Github</a>
             
             
           </div>
